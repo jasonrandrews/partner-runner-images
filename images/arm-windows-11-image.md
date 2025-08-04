@@ -9,6 +9,7 @@ If you would like something added or would like to propose a substitute for some
 
 # Windows 11 Enterprise
 - OS Version: 10.0.26100 Build 4656
+- Image Version: 20250728.24.1
 - SKU: win11-24h2-ent 
 
 ## Installed Software
