@@ -62,8 +62,7 @@ A Beta may take on different availability, i.e. public vs private.
 
 ### GA
 
-A GA (General Availability) image has been through a Beta period and is deemed ready for general use. Images are updated on a quarterly cadence. In order to be moved to
-GA the image must meet the following criteria:
+A GA (General Availability) image has been through a Beta period and is deemed ready for general use. Images are updated on a quarterly cadence. In order to be moved to GA, the image must meet the following criteria:
 
 1. Has been through a Beta period (public or private)
 2. Most major software we install on the image has a compatible version for the underlying OS
