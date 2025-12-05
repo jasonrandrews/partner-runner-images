@@ -25,9 +25,9 @@ Please note that since this repository is maintained by partners, it will not pr
 
 | Partner | Image | YAML Label | Included Software | OS / Architecture | Rollout Progress of Latest Image Release | Support Link | 
 |-----------| --------------------|---------------------|--------------------|--------------------|----------------------------|-----------------------|
-| Arm Limited, Inc. | Ubuntu 24.04 by Arm Limited | `ubuntu-24.04-arm` and custom in larger runners| [Ubuntu 24.04 Inventory](/images/arm-ubuntu-24-image.md) | Linux, ARM64 | In Beta (Public) | [About & Support](https://github.com/actions/partner-runner-images/issues/new/choose) |
-| Arm Limited, Inc. | Ubuntu 22.04 by Arm Limited | `ubuntu-22.04-arm` and custom in larger runners| [Ubuntu 22.04 Inventory](/images/arm-ubuntu-22-image.md) | Linux, ARM64 | In Beta (Public) | [About & Support](https://github.com/actions/partner-runner-images/issues/new/choose) |
-| Arm Limited, Inc. | Windows 11 by Arm Limited | `windows-11-arm` and custom in larger runners| [Windows 11 Inventory](/images/arm-windows-11-image.md) | Windows, ARM64 | In Beta (Public) | [About & Support](https://github.com/actions/partner-runner-images/issues/new/choose) |
+| Arm Limited, Inc. | Ubuntu 24.04 by Arm Limited | `ubuntu-24.04-arm` and custom in larger runners| [Ubuntu 24.04 Inventory](/images/arm-ubuntu-24-image.md) | Linux, ARM64 | generally available | [About & Support](https://github.com/actions/partner-runner-images/issues/new/choose) |
+| Arm Limited, Inc. | Ubuntu 22.04 by Arm Limited | `ubuntu-22.04-arm` and custom in larger runners| [Ubuntu 22.04 Inventory](/images/arm-ubuntu-22-image.md) | Linux, ARM64 | generally available | [About & Support](https://github.com/actions/partner-runner-images/issues/new/choose) |
+| Arm Limited, Inc. | Windows 11 by Arm Limited | `windows-11-arm` and custom in larger runners| [Windows 11 Inventory](/images/arm-windows-11-image.md) | Windows, ARM64 | generally available | [About & Support](https://github.com/actions/partner-runner-images/issues/new/choose) |
 | Arm Limited, Inc. | ARM-Partner-AVH | custom in larger runners| [AVH Inventory](https://arm-software.github.io/AVH/main/infrastructure/html/avh_gh_inventory.html ) | Linux, x64 | In Beta (Private) | [About & Support](https://arm-software.github.io/AVH/main/infrastructure/html/avh_gh.html) |
 
 ## Current Partner image overview 
@@ -62,8 +62,7 @@ A Beta may take on different availability, i.e. public vs private.
 
 ### GA
 
-A GA (General Availability) image has been through a Beta period and is deemed ready for general use. Images are updated on a weekly cadence. In order to be moved to
-GA the image must meet the following criteria:
+A GA (General Availability) image has been through a Beta period and is deemed ready for general use. Images are updated on a quarterly cadence. In order to be moved to GA, the image must meet the following criteria:
 
 1. Has been through a Beta period (public or private)
 2. Most major software we install on the image has a compatible version for the underlying OS

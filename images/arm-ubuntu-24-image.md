@@ -8,6 +8,8 @@ Some changes have been made to accommodate for the Arm architecture.
 
 If you would like something added or would like to propose a substitute for something that does not work on Arm, please open an issue in this repo.
 
+For a complete software inventory, refer to the [Ubuntu 24.04 Readme](Ubuntu2404-Readme.md), which is generated from the image build process.
+
 ## Installed Software
 
 - 7z
