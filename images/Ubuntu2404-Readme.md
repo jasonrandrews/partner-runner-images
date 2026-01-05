@@ -1,6 +1,6 @@
 # Ubuntu 24.04
 - OS Version: 24.04.3 LTS
-- Kernel Version: 6.14.0-1012-azure
+- Kernel Version: 6.14.0-1014-azure
 - Image Version: 0.0.1
 - Systemd version: 255.4-1ubuntu8.11
 
@@ -15,20 +15,21 @@
 - GNU C++: 12.4.0, 13.3.0, 14.2.0
 - GNU Fortran: 12.4.0, 13.3.0, 14.2.0
 - Kotlin 2.2.21-release-469
-- Node.js 20.19.5
+- Node.js 20.19.6
 - Perl 5.38.2
 - Python 3.12.3
 - Ruby 3.2.3
-- Swift 6.2
+- Swift 6.2.3
 
 ### Package Management
-- Helm 3.19.0
+- Helm 3.19.4
+- Homebrew 5.0.5
 - Npm 10.8.2
 - Pip 24.0
 - Pip3 24.0
 - Pipx 1.8.0
 - RubyGems 3.4.20
-- Vcpkg (build from commit cf1490f511)
+- Vcpkg (build from commit 9984495d19)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -37,86 +38,94 @@
 | CONDA                   |                        |
 | VCPKG_INSTALLATION_ROOT | /usr/local/share/vcpkg |
 
+#### Homebrew note
+```
+Location: /home/linuxbrew
+Note: Homebrew is pre-installed on image but not added to PATH.
+run the eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" command
+to accomplish this.
+```
+
 ### Project Management
 - Ant 1.10.14
 - Gradle 4.4.1
-- Lerna 9.0.0
+- Lerna 9.0.3
 - Maven 3.9.11
 
 ### Tools
-- Ansible 2.19.3
-- AzCopy 10.30.1 - available by `azcopy` and `azcopy10` aliases
-- Bazel 8.4.2
+- Ansible 2.20.1
+- AzCopy 10.31.0 - available by `azcopy` and `azcopy10` aliases
+- Bazel 8.5.0
 - Bazelisk 1.26.0
 - Buildah 1.33.7
 - CMake 3.31.6
-- Docker Amazon ECR Credential Helper 0.10.1
+- Docker Amazon ECR Credential Helper 0.11.0
 - Docker Compose v2 2.38.2
-- Docker-Buildx 0.29.1
+- Docker-Buildx 0.30.1
 - Docker Client 28.0.4
 - Docker Server 28.0.4
-- Git 2.51.1
+- Git 2.52.0
 - Git LFS 3.7.1
 - Git-ftp 1.6.0
 - Haveged 1.9.14
 - jq 1.7
 - Kind 0.30.0
-- Kubectl 1.34.1
-- Kustomize 5.7.1
+- Kubectl 1.34.3
+- Kustomize 5.8.0
 - OpenSSL 3.0.13-0ubuntu3.6
-- Packer 1.14.2
+- Packer 1.14.3
 - Podman 4.9.3
-- Pulumi 3.204.0
+- Pulumi 3.212.0
 - Skopeo 1.13.3
 - yamllint 1.37.1
-- yq 4.48.1
+- yq 4.50.1
 - zstd 1.5.7
 - Ninja 1.12.1
 
 ### CLI Tools
-- AWS CLI 2.31.23
-- AWS CLI Session Manager Plugin 1.2.707.0
-- AWS SAM CLI 1.145.2
-- Azure CLI 2.78.0
+- AWS CLI 2.32.17
+- AWS CLI Session Manager Plugin 1.2.764.0
+- AWS SAM CLI 1.150.1
+- Azure CLI 2.81.0
 - Azure CLI (azure-devops) 1.0.2
-- GitHub CLI 2.82.1
-- Google Cloud CLI 544.0.0
+- GitHub CLI 2.83.2
+- Google Cloud CLI 549.0.1
 
 ### Java
 | Version              | Environment Variable |
 | -------------------- | -------------------- |
-| 8.0.462+8            | JAVA_HOME_8_X64      |
-| 11.0.28+6            | JAVA_HOME_11_X64     |
+| 8.0.472+8            | JAVA_HOME_8_X64      |
+| 11.0.29+7            | JAVA_HOME_11_X64     |
 | 17.0.17+10 (default) | JAVA_HOME_17_X64     |
-| 21.0.8+9             | JAVA_HOME_21_X64     |
-| 25.0.0+36            | JAVA_HOME_25_X64     |
+| 21.0.9+10            | JAVA_HOME_21_X64     |
+| 25.0.1+8             | JAVA_HOME_25_X64     |
 
 ### PHP Tools
-- PHP: 8.3.26
-- Composer 2.8.12
-- PHPUnit 8.5.48
+- PHP: 8.3.28
+- Composer 2.9.2
+- PHPUnit 8.5.50
 ```
 Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 ```
 
 ### Rust Tools
-- Cargo 1.90.0
-- Rust 1.90.0
-- Rustdoc 1.90.0
+- Cargo 1.92.0
+- Rust 1.92.0
+- Rustdoc 1.92.0
 - Rustup 1.28.2
 
 #### Packages
 - Rustfmt 1.8.0
 
 ### .NET Tools
-- .NET Core SDK: 8.0.121, 8.0.206, 8.0.318, 8.0.415, 9.0.111, 9.0.205, 9.0.306
-- nbgv 3.8.118+69b3e0b5a0
+- .NET Core SDK: 8.0.122, 8.0.206, 8.0.319, 8.0.416, 9.0.112, 9.0.205, 9.0.308, 10.0.101
+- nbgv 3.9.50+6feeb89450
 
 ### Databases
 - sqlite3 3.45.1
 
 #### MySQL
-- MySQL 8.0.43-0ubuntu0.24.04.2
+- MySQL 8.0.44-0ubuntu0.24.04.2
 ```
 User: root
 Password: root
@@ -129,7 +138,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 
 #### PowerShell Modules
 - Az: 12.5.0
-- Microsoft.Graph: 2.32.0
+- Microsoft.Graph: 2.33.0
 - Pester: 5.7.1
 - PSScriptAnalyzer: 1.24.0
 
@@ -140,7 +149,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | aria2                  | 1.37.0+debian-1build3        |
 | autoconf               | 2.71-3                       |
 | automake               | 1:1.16.5-1.3ubuntu1          |
-| binutils               | 2.42-4ubuntu2.5              |
+| binutils               | 2.42-4ubuntu2.8              |
 | bison                  | 2:3.8.2+dfsg-1build2         |
 | brotli                 | 1.1.0-2build2                |
 | bzip2                  | 1.0.8-5.1build0.1            |
@@ -202,12 +211,12 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | texinfo                | 7.1-3build2                  |
 | time                   | 1.9-0.2build1                |
 | tk                     | 8.6.14build1                 |
-| tree                   | 2.1.1-2ubuntu3               |
+| tree                   | 2.1.1-2ubuntu3.24.04.2       |
 | tzdata                 | 2025b-0ubuntu0.24.04.1       |
 | unzip                  | 6.0-28ubuntu4.1              |
 | upx                    | 4.2.2-3                      |
 | wget                   | 1.21.4-1ubuntu4.1            |
-| xvfb                   | 2:21.1.12-1ubuntu1.4         |
+| xvfb                   | 2:21.1.12-1ubuntu1.5         |
 | xz-utils               | 5.6.1+really5.4.5-1ubuntu0.2 |
 | zip                    | 3.0-13ubuntu0.2              |
 | zsync                  | 0.6.2-5build1                |
